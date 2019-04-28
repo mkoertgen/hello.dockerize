@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  nginx:
+    build:
+      context: nginx
+    environment:
+      PROXY_URL: http://mkoertgen.blogspot.com/
+    ports: ['80:80']
+  
